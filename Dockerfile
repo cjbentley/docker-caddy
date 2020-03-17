@@ -2,7 +2,7 @@ FROM alpine:3.5
 LABEL maintainer "Cameron Bentley <cameron@bentley.sh>"
 LABEL architecture="amd64"
 
-ARG plugins=dyndns,http.authz,http.cache,http.cgi,http.cors,http.expires,http.filemanager,http.filter,http.forwardproxy,http.git,http.hugo,http.ipfilter,http.jekyll,http.jwt,http.locale,http.login,http.nobots,http.proxyprotocol,http.ratelimit,http.realip,http.reauth,http.upload
+ARG plugins=dyndns,http.authz,http.cache,http.cgi,http.cors,http.expires,http.filter,http.forwardproxy,http.git,http.hugo,http.ipfilter,http.jekyll,http.jwt,http.locale,http.login,http.nobots,http.proxyprotocol,http.ratelimit,http.realip,http.reauth,http.upload
 ARG dns=tls.dns.cloudflare,tls.dns.namecheap,tls.dns.rfc2136
 
 RUN apk add --no-cache openssh-client git tar curl ca-certificates bash && update-ca-certificates
